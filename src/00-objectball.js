@@ -126,11 +126,14 @@ const gameObject = {
 
 
 };
-function numPointsScored (stringName) {
+function numPointsScored (number) {
     for(const team in gameObject) {
     const teamObj = gameObject[team];
         for(const teamInfo in teamObj) {
-            
+            const info = teamObj[teamInfo][2];
+            for(const points in info) {
+                console.log(points);
+            }
         }
     }
 }
